@@ -7,7 +7,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using OnlineService;
-using Doozy.Engine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
