@@ -1,0 +1,17 @@
+{
+    "name": "com.dcplaystarz.flipgun",
+    "version": "1.2.3",
+    "displayName": "PlaystarZ FlipGun",
+    "description": "External Game for PlayStarZ main Project",
+    "unity": "2021.1",
+    "unityRelease": "0b5",
+    "documentationUrl": "https://example.com/",
+    "changelogUrl": "https://example.com/changelog.html",
+    "licensesUrl": "https://example.com/licensing.html",
+   
+    "author": {
+      "name": "Mayank Rathod",
+      "email": "mayank@dirtcube.xyz",
+      "url": "https://www.dirtcube.xyz"
+    }
+  }
