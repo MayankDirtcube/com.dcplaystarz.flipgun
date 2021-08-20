@@ -17,9 +17,20 @@ public class Data : MonoBehaviour {
 	public static GameObject firstBullet, secondBullet, thirdBullet, bulletShell;
 	public static GameObject laser, rocket;
 
+	[SerializeField]
+	private FTG_Data _properties;
+	[SerializeField]
+	private GameObject[] _gunsGame;
+
+	[SerializeField]
+	private GameObject[] _gunsMenu;
+
 	void Awake () 
 	{
-		properties = Resources.Load<FTG_Data>("Data/Data");
+		properties = _properties;
+		gunsGame = _gunsGame;
+		gunsMenu = _gunsMenu;
+		//properties = Resources.Load<FTG_Data>("Data/Data");
 		gunsGame = Resources.LoadAll<GameObject>("Prefabs/Guns/Game");
 		gunsMenu = Resources.LoadAll<GameObject>("Prefabs/Guns/Menu");
 		layers = Resources.LoadAll<GameObject>("Prefabs/Layers");
