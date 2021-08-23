@@ -18,30 +18,47 @@ public class Data : MonoBehaviour {
 	public static GameObject laser, rocket;
 
 	[SerializeField]
-	private FTG_Data _properties;
-	[SerializeField]
-	private GameObject[] _gunsGame;
+	private AssetData[] assetDataList;
 
 	[SerializeField]
-	private GameObject[] _gunsMenu;
+	private GameObject[] bulletList;
+
+	[SerializeField]
+	private GameObject HighScore;
+
+	[SerializeField]
+	private GameObject score;
 
 	void Awake () 
 	{
-		properties = _properties;
-		gunsGame = _gunsGame;
-		gunsMenu = _gunsMenu;
-		//properties = Resources.Load<FTG_Data>("Data/Data");
-		gunsGame = Resources.LoadAll<GameObject>("Prefabs/Guns/Game");
-		gunsMenu = Resources.LoadAll<GameObject>("Prefabs/Guns/Menu");
-		layers = Resources.LoadAll<GameObject>("Prefabs/Layers");
-		highscoreLine = Resources.Load<GameObject>("Prefabs/UI/HighscoreLine");
-		scoreLines = Resources.Load<GameObject>("Prefabs/UI/ScoreLines");
+        layers = assetDataList[0].assetList;
+		gunsGame = assetDataList[1].assetList;
+		gunsMenu = assetDataList[2].assetList;
 
-		firstBullet = Resources.Load<GameObject>("Prefabs/Bullets/BulletFly (1)");	
-		secondBullet = Resources.Load<GameObject>("Prefabs/Bullets/BulletFly (2)");	
-		thirdBullet = Resources.Load<GameObject>("Prefabs/Bullets/BulletFly (3)");
-		laser = Resources.Load<GameObject>("Prefabs/Bullets/BulletFly (4)");
-		rocket = Resources.Load<GameObject>("Prefabs/Bullets/BulletFly (5)");
-		bulletShell = Resources.Load<GameObject>("Prefabs/Bullets/Bullet Shell");		
+		firstBullet = bulletList[0];
+		secondBullet = bulletList[1];
+		thirdBullet = bulletList[2];
+		laser = bulletList[3];
+		rocket = bulletList[4];
+		bulletShell = bulletList[5];
+
+		highscoreLine = HighScore;
+		scoreLines = score;
+
+		//Old Code
+		//--------------------------------------------------------------------------
+		properties = Resources.Load<FTG_Data>("Data/Data");
+		//gunsGame = Resources.LoadAll<GameObject>("Prefabs/Guns/Game");
+		//gunsMenu = Resources.LoadAll<GameObject>("Prefabs/Guns/Menu");
+		//layers = Resources.LoadAll<GameObject>("Prefabs/Layers");
+		//highscoreLine = Resources.Load<GameObject>("Prefabs/UI/HighscoreLine");
+		//scoreLines = Resources.Load<GameObject>("Prefabs/UI/ScoreLines");
+		//firstBullet = Resources.Load<GameObject>("Prefabs/Bullets/BulletFly (1)");	
+		//secondBullet = Resources.Load<GameObject>("Prefabs/Bullets/BulletFly (2)");	
+		//thirdBullet = Resources.Load<GameObject>("Prefabs/Bullets/BulletFly (3)");
+		//laser = Resources.Load<GameObject>("Prefabs/Bullets/BulletFly (4)");
+		//rocket = Resources.Load<GameObject>("Prefabs/Bullets/BulletFly (5)");
+		//bulletShell = Resources.Load<GameObject>("Prefabs/Bullets/Bullet Shell");	
+		//----------------------------------------------------------------------------
 	}
 }

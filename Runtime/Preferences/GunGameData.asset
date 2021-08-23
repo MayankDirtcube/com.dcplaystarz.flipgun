@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbf55794a570c74abb773c6a0c99de7, type: 3}
+  m_Name: GunGameData
+  m_EditorClassIdentifier: 
+  assetList:
+  - {fileID: 1001710404708354, guid: f7858d9cbd2b3124c803ccf4dc5f7efb, type: 3}
+  - {fileID: 1884207921229534, guid: 11b34dbeda475c04d8d83aa1695de3bd, type: 3}
+  - {fileID: 1179870405876336, guid: 081588725b14eb54781d2aeedfa6d27b, type: 3}
+  - {fileID: 1179870405876336, guid: 24123e3326f0ab34e88d1b121b40ed4d, type: 3}
+  - {fileID: 1752158123480620, guid: 916f7a1a183bd2d4aa6cbc4ab255ddf2, type: 3}
+  - {fileID: 1752158123480620, guid: 377a5f1851dc72640b05937e1b426179, type: 3}
+  - {fileID: 1884207921229534, guid: 17a9c45ab54f64045bf45c52cd12be78, type: 3}
+  - {fileID: 1884207921229534, guid: b35e1ad95a4d9cc4290c9b28d11f900b, type: 3}
+  - {fileID: 1884207921229534, guid: 97d784079deaa684da381766014d4e96, type: 3}
+  - {fileID: 1884207921229534, guid: 79f79720a7ddf1d47a8ebd5dfde016dc, type: 3}
+  - {fileID: 1884207921229534, guid: 9cd1be6e7c67de042bd7be307728fe85, type: 3}
+  - {fileID: 1884207921229534, guid: bde04c228019acb438fdf1ad855b0dab, type: 3}
